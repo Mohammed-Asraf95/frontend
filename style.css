@@ -1,0 +1,11 @@
+/*external css */
+p{
+            color:red;
+            background-color: aqua;
+            text-align: center;
+        }
+        h1{
+            color:red;
+            text-decoration:underline;
+            text-align:center;
+        }
