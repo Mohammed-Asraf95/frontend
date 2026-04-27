@@ -1,0 +1,33 @@
+/* Universal Selector*/
+* {
+    font-style: italic;
+    color: blue;
+}
+
+/* type/ Tag Selector */
+p {
+    background-color: yellow;
+    color: blueviolet;
+}
+h3 {
+    text-align: center;
+}
+
+/* ID selecetor - unique */
+#para {
+    text-align: center;
+}
+
+/* class Selector */
+.redpara {
+    color: red;
+}
+
+.line {
+    text-decoration: underline;
+}
+
+/* Group Selector -, */
+ h1, h3 , h5 {
+    background-color: aquamarine;
+ }
