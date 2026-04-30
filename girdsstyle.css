@@ -1,0 +1,16 @@
+.container {
+    background-color: aqua;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 200px auto;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px 30px;
+}
+
+.container div {
+    background-color: violet;
+    padding: 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
