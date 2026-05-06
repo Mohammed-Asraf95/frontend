@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        div#static {
+            /* position: static; default */
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            left: 100px;
+            top: 100px;
+        }
+
+        div#parentrel {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            left: 100px;
+        }
+
+        div#childabs {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            left:300px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="static">Ststic Div</div>
+    <div id="parentrel">
+        <div id="childabs"></div>
+    </div>
+    
+</body>
+</html>
