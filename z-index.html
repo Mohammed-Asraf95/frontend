@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .container {
+                position: relative;
+            }
+            .black-box {
+                position: relative;
+                z-index: 2;
+                background-color: black;
+                border: 2px solid black;
+                height: 100px;
+                margin: 30px;
+            }
+            .gray-box {
+                position: absolute;
+                z-index: 3;
+                background-color: lightgray;
+                height: 60px;
+                width: 70px;
+                left: 50px;
+                top: 50px;
+            }
+            .green-box {
+                position: absolute;
+                z-index: 1; 
+                background-color: lightgreen;
+                width: 35%;
+                left: 250px;
+                top: -15px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="black-box">Black Box</div>
+            <div class="gray-box">Gray Box</div>
+            <div class="green-box">Green Box</div>
+        </div>
+    </body>
+</html>
