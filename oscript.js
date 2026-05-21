@@ -1,0 +1,44 @@
+let a = 10;
+let b = 5;
+document.writeln("Arithmetic operator:");
+document.writeln("<br>");
+document.writeln(a+b);
+document.writeln("<br>");
+document.writeln(a-b);
+document.writeln("<br>");
+document.writeln(a*b);
+document.writeln("<br>");
+document.writeln(a/b);
+document.writeln("<br>");
+document.writeln(a%b);
+document.writeln("<br>");
+document.writeln(a**b);
+document.writeln("<br>");
+let x=8;
+document.writeln(x++);
+document.writeln(x);
+document.writeln("<br>");
+let y=4;
+document.writeln(y--);
+document.writeln(y);
+document.writeln("<br>");
+
+document.writeln("Assignment opeartor:");
+document.writeln("<br>");
+let c=5;
+document.writeln(c);
+document.writeln("<br>");
+document.writeln(c+=3);
+document.writeln("<br>");
+document.writeln(c-=3);
+document.writeln("<br>");
+document.writeln(c*=3);
+document.writeln("<br>");
+document.writeln(c/=3);
+document.writeln("<br>");
+document.writeln(c=3);
+document.writeln("<br>");
+
+document.writeln("Relational operators");
+document.writeln("<br>");
+
