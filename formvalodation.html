@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Validation</title>
+</head>
+<body>
+    <form>
+        <label>Username:</label>
+        <input type="text" id="username">
+        <br>
+        <br>
+        <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        let i= document.getElementById("username");
+        let f= document.querySelector("form");
+        i.addEvenListener("keypress", (event) => {
+        const pattern = /^[a-zA-Z]$/;
+
+        if (!pattern.test(event.key)) {
+            event.preventDefault();
+        }
+        });
+
+        f.addEventListener("submit", (event) => {
+            event.preventDefault();
+        
+
+        let username = document.getElementById("username").value.trim();
+
+        let regex = /^[a-zA-Z]+$/;
+        if(username === "") {
+            alert("Warning: Username Cannot be empty");
+        } else if(username.length < 2) {
+            alert("Warning: username should be more than 2 charactyers");
+        } else if(username.length > 15) {
+            alert("Warning: Username must not exceed 15 charachters!");
+        } else if(!regex.test(username)) {
+            alert("Only letters !numbers, and underscores allowed");
+        } else {
+            alert("valid Name");
+        }
+
+        //Email validation
+        const email = documenr.getElementById("email").value.trim();
+        const emailPattern = /^[a-zA-Z0-9]+@[a=zA-Z0-9]+\.[a-zA-Z]
+
+        if (!emailPattern.test(email)) {
+            alert("please enter a valid email adddress.");
+} else {
+    alert("valid email");
+}
+const password = document.getElementById("password").value;
+const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}
+if(!passwordPattern.test(password)) {
+    alert("Password must be at least 8 characters long and ")
+} else {
+    alert("Password is valid!");
+}
+alert("Form submitted");
+        });
+    </script>
+    
+</body>
+</html>
