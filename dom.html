@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM methods</title>
+</head>
+<body>
+    <h1>DOM methods</h1>
+    <p>getElementsbytagname</p>
+    <p id="paraid" class="bluetext">getElementsId</p>
+    <p class=""bluetext>getElementsbyclassname</p>
+    <p>getElementsbyname</p>
+    <button onclick="change()"> Click me to change</button>
+
+    <script>
+        let p = document.querySelectorAll("h4");
+        p.forEach((p) => {p.style.backgroundColor ="black; p.style.color = "white}); 
+        document.querySelector("h1").innerHTML = "<h3><i>DOM methods in JavaScript</i></h1>";
+        document.querySelector("button").textContent = "Click me";
+        document.getElementsByTagName("p")[0].style.color = "green";
+        document.getElementsById("paraid").style.fontSize = "50px";
+
+        let bt = document.getElementsByClassName("bluetext");
+        for(let i=0; i<bt.length;i++) {
+            bt[i].style.color="blue";
+            bt[i].style.backgroundColor = "green";
+        }
+
+        function change() {
+            let x = document.getElementsByTagName("favhero")[0].value;
+            document.getElementById("paravalue").innerText=x;
+            for(let i=0; i<paras.length; i++) {
+                paras[i].style.color = "red";
+                paras[i].style.backgroundColor = "yellow";
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
