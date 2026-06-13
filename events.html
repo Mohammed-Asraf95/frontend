@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #myDiv {
+            width: 100px;
+            height: 300px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mouse Events</h2>
+    <br>
+    <div id = "myDiv"></div>
+    <script>
+        let box = document.getElementById("myDiv");
+        box.addEventListener('click', () => {
+            box.style.backgroundColor='red';
+        });
+        box.addEventListener("dbclick", () => {
+            box.style.backgroundColor= "yellow";
+            box.innerText = "user dbl clicked";
+        });
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor= "blue";
+        });
+        
+        box.addEventListener("mouseout", () => {
+            box.style.backgroundColor= "aqua";
+        });
+        box.addEventListener("mousemove", (e) => {
+            box.innerText = `X value: ${e.offsetX} and Yvalue`;
+            alert("Warning: don't move outside the box")
+        })
+
+
+    </script>
+</body>
+</html>
