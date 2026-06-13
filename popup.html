@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popups</title>
+</head>
+<body>
+    <h4>Popups in JS</h4>
+    <hr>
+    <script>
+        alert("form is submitted successfully!")
+        alert("Warning only 500mb left")
+
+        let choice = confirm("do you want to continue?");
+        document.writeln("The user selected: ", choice)
+        document.writeln("<br>")
+        document.wrteln("The user selected: ", (choice ? "ok" : "cancel"))
+
+
+        let name = prompt("Enter your name")
+        alert("The user entered " + name)
+
+        let n1 = Number(prompt("Enter first number"))
+        let n2 = Number(prompt("enter second number"))
+        let sum = n1 + n2
+        document.writeln(sum)
+    </script>
+
+</body>
+</html>
